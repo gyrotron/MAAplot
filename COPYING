@@ -1,0 +1,28 @@
+{
+*****************************************************************************
+*  This file is part of Multiple Acronym Math and Audio Plot - MAAPlot      *
+*                                                                           *
+*  See the file COPYING.                                                    *
+*  for details about the copyright.                                         *
+*                                                                           *
+*  This program is distributed in the hope that it will be useful,          *
+*  but WITHOUT ANY WARRANTY; without even the implied warranty of           *
+*  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.                     *
+*                                                                           *
+*  MAAplot for Lazarus/fpc                                                  *
+*  (C) 2014 Stefan Junghans                                                 *
+*****************************************************************************
+}           
+
+** FreePascal / Lazarus classes for scientific data plotting **
+
+Copyright 2014 Stefan Junghans
+Junghans electronics
+MAAPlot (at) junghans-electronics de
+
+First release, version 141020_0
+This software is published under the terms 
+of the European Union Public License, EUPL V.1.1
+
+Licensed under the EUPL V.1.1
+
