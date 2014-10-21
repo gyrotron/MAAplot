@@ -1,0 +1,141 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<title>TXYPlotSeries</title>
+<link rel="stylesheet" href="../fpdoc.css" type="text/css">
+
+</head>
+<body>
+<table class="bar" width="100%" border="0" cellpadding="4" cellspacing="0">
+<tr>
+<td><b>[<a href="../uplotseries/index.html">Overview</a>][<a href="../uplotseries/index-2.html">Constants</a>][<a href="../uplotseries/index-3.html">Types</a>][<a href="../uplotseries/index-4.html">Classes</a>][<a href="../uplotseries/index-8.html">Index</a>]</b></td>
+<td align="right"><span class="bartitle">Reference for unit 'uPlotSeries' (<a href="../index.html">#PlotClass</a>)</span></td>
+</tr>
+</table>
+<h1>TXYPlotSeries</h1>
+<p>[<a href="../uplotseries/txyplotseries-1.html" onClick="window.open('../uplotseries/txyplotseries-1.html', 'list', 'dependent=yes,resizable=yes,scrollbars=yes,height=400,width=300'); return false;">Properties</a> (<a href="../uplotseries/txyplotseries-2.html" onClick="window.open('../uplotseries/txyplotseries-2.html', 'list', 'dependent=yes,resizable=yes,scrollbars=yes,height=400,width=300'); return false;">by Name</a>)] [<a href="../uplotseries/txyplotseries-3.html" onClick="window.open('../uplotseries/txyplotseries-3.html', 'list', 'dependent=yes,resizable=yes,scrollbars=yes,height=400,width=300'); return false;">Methods</a> (<a href="../uplotseries/txyplotseries-4.html" onClick="window.open('../uplotseries/txyplotseries-4.html', 'list', 'dependent=yes,resizable=yes,scrollbars=yes,height=400,width=300'); return false;">by Name</a>)] [<a href="../uplotseries/txyplotseries-5.html" onClick="window.open('../uplotseries/txyplotseries-5.html', 'list', 'dependent=yes,resizable=yes,scrollbars=yes,height=400,width=300'); return false;">Events</a> (<a href="../uplotseries/txyplotseries-6.html" onClick="window.open('../uplotseries/txyplotseries-6.html', 'list', 'dependent=yes,resizable=yes,scrollbars=yes,height=400,width=300'); return false;">by Name</a>)] </p>
+<p>2D PlotSeries</p>
+<h2>Declaration</h2>
+<p>Source position: uPlotSeries.pas line 101</p>
+<table cellpadding="0" cellspacing="0">
+<tr>
+<td><p><tt><span class="code"><span class="kw">type</span> TXYPlotSeries <span class="sym">=</span> <span class="kw">class</span><span class="sym">(</span><a href="../uplotseries/tplotseries.html">TPlotSeries</a><span class="sym">)</span></span></tt></p></td>
+</tr>
+<tr>
+<td><p><tt><span class="code"><span class="kw">protected</span></span></tt></p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">procedure </span><a href="../uplotseries/txyplotseries.redraw.html">Redraw</a><span class="sym">;</span><span class="kw"> override</span><span class="sym">;</span></span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">redraws the stored data</p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">function </span><a href="../uplotseries/txyplotseries.getnumstoreditems.html">GetNumStoredItems</a><span class="sym">;</span></span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt"></p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">procedure </span><a href="../uplotseries/txyplotseries.setmaxstoreditems.html">SetMaxStoredItems</a><span class="sym">();</span></span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt"></p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">function </span><a href="../uplotseries/txyplotseries.getvaluerange.html">GetValueRange</a><span class="sym">();</span><span class="kw"> override</span><span class="sym">;</span></span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt"></p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">function </span><a href="../uplotseries/txyplotseries.getautoscalerange.html">GetAutoScaleRange</a><span class="sym">();</span><span class="kw"> override</span><span class="sym">;</span></span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt"></p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">function </span><a href="../uplotseries/txyplotseries.isinviewrange.html">IsInViewRange</a><span class="sym">();</span></span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">X and Y value inside viewrange</p></td>
+</tr>
+<tr>
+<td><p><tt><span class="code"><span class="kw">public</span></span></tt></p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">constructor </span><a href="../uplotseries/txyplotseries.create.html">Create</a><span class="sym">();</span><span class="kw"> override</span><span class="sym">;</span></span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt"></p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">destructor </span><a href="../uplotseries/txyplotseries.destroy.html">Destroy</a><span class="sym">;</span><span class="kw"> override</span><span class="sym">;</span></span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt"></p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">function </span><a href="../uplotseries/txyplotseries.checkrefresh.html">CheckRefresh</a><span class="sym">();</span><span class="kw"> override</span><span class="sym">;</span></span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">check wether the series needs a refresh</p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">procedure </span><a href="../uplotseries/txyplotseries.addvalue.html">AddValue</a><span class="sym">();</span></span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">Add a datapoint</p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">function </span><a href="../uplotseries/txyplotseries.exportseriesdata.html">ExportSeriesData</a><span class="sym">();</span><span class="kw"> virtual</span><span class="sym">;</span></span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">write the data to a file</p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">function </span><a href="../uplotseries/txyplotseries.importseriesdata.html">ImportSeriesData</a><span class="sym">();</span><span class="kw"> virtual</span><span class="sym">;</span></span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">read data from a file</p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">procedure </span><a href="../uplotseries/txyplotseries.clear.html">Clear</a><span class="sym">;</span><span class="kw"> override</span><span class="sym">;</span></span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">Clear all data</p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">property </span><a href="../uplotseries/txyplotseries.maxstoreditems.html">MaxStoredItems</a><span class="sym">: </span>Integer<span class="sym">;</span>  [rw]</span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">maximum number of datapoints stored</p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">property </span><a href="../uplotseries/txyplotseries.numstoreditems.html">NumStoredItems</a><span class="sym">: </span>Integer<span class="sym">;</span>  [r]</span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">actual  number of datapoints stored</p></td>
+</tr>
+<tr>
+<td><p><tt><span class="code"> <span class="kw">end</span><span class="sym">;</span></span></tt></p></td>
+</tr>
+</table>
+<h2>Inheritance</h2>
+<table cellpadding="0" cellspacing="0">
+<tr>
+<td align="center" valign="top"><p><tt><span class="code"><a href="../uplotseries/txyplotseries.html">TXYPlotSeries</a></span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">2D PlotSeries</p></td>
+</tr>
+<tr>
+<td align="center">|</td>
+</tr>
+<tr>
+<td align="center" valign="top"><p><tt><span class="code"><a href="../uplotseries/tplotseries.html">TPlotSeries</a></span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">PlotSeries - container for data to be plotted</p></td>
+</tr>
+<tr>
+<td align="center">|</td>
+</tr>
+<tr>
+<td align="center"><p><tt><span class="code">uPlotClass.TPlotSeriesBase</span></tt></p></td>
+</tr>
+<tr>
+<td align="center">?</td>
+</tr>
+<tr>
+<td align="center"><p><tt><span class="code">TObject</span></tt></p></td>
+</tr>
+</table>
+<h2>Description</h2>
+<p>The TXYPLotSeries is the standard 2D Series.  It directly plots onto the PlotImage of the TPLot. It stores the data to be plottet.</p>
+</body>
+</html>

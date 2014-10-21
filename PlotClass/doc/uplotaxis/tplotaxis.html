@@ -1,0 +1,341 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<title>TPlotAxis</title>
+<link rel="stylesheet" href="../fpdoc.css" type="text/css">
+
+</head>
+<body>
+<table class="bar" width="100%" border="0" cellpadding="4" cellspacing="0">
+<tr>
+<td><b>[<a href="../uplotaxis/index.html">Overview</a>][<a href="../uplotaxis/index-2.html">Constants</a>][<a href="../uplotaxis/index-3.html">Types</a>][<a href="../uplotaxis/index-4.html">Classes</a>][<a href="../uplotaxis/index-8.html">Index</a>]</b></td>
+<td align="right"><span class="bartitle">Reference for unit 'uPlotAxis' (<a href="../index.html">#PlotClass</a>)</span></td>
+</tr>
+</table>
+<h1>TPlotAxis</h1>
+<p>[<a href="../uplotaxis/tplotaxis-1.html" onClick="window.open('../uplotaxis/tplotaxis-1.html', 'list', 'dependent=yes,resizable=yes,scrollbars=yes,height=400,width=300'); return false;">Properties</a> (<a href="../uplotaxis/tplotaxis-2.html" onClick="window.open('../uplotaxis/tplotaxis-2.html', 'list', 'dependent=yes,resizable=yes,scrollbars=yes,height=400,width=300'); return false;">by Name</a>)] [<a href="../uplotaxis/tplotaxis-3.html" onClick="window.open('../uplotaxis/tplotaxis-3.html', 'list', 'dependent=yes,resizable=yes,scrollbars=yes,height=400,width=300'); return false;">Methods</a> (<a href="../uplotaxis/tplotaxis-4.html" onClick="window.open('../uplotaxis/tplotaxis-4.html', 'list', 'dependent=yes,resizable=yes,scrollbars=yes,height=400,width=300'); return false;">by Name</a>)] [<a href="../uplotaxis/tplotaxis-5.html" onClick="window.open('../uplotaxis/tplotaxis-5.html', 'list', 'dependent=yes,resizable=yes,scrollbars=yes,height=400,width=300'); return false;">Events</a> (<a href="../uplotaxis/tplotaxis-6.html" onClick="window.open('../uplotaxis/tplotaxis-6.html', 'list', 'dependent=yes,resizable=yes,scrollbars=yes,height=400,width=300'); return false;">by Name</a>)] </p>
+<p>Axes for the plot</p>
+<h2>Declaration</h2>
+<p>Source position: uplotaxis.pas line 68</p>
+<table cellpadding="0" cellspacing="0">
+<tr>
+<td><p><tt><span class="code"><span class="kw">type</span> TPlotAxis <span class="sym">=</span> <span class="kw">class</span><span class="sym">(</span><a href="../uplotclass/tplotaxisbase.html">uPlotClass.TPlotAxisBase</a><span class="sym">)</span></span></tt></p></td>
+</tr>
+<tr>
+<td><p><tt><span class="code"><span class="kw">protected</span></span></tt></p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">function </span><a href="../uplotaxis/tplotaxis.getviewrange.html">GetViewRange</a><span class="sym">;</span><span class="kw"> override</span><span class="sym">;</span></span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt"></p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">procedure </span><a href="../uplotaxis/tplotaxis.setviewrange.html">SetViewRange</a><span class="sym">();</span><span class="kw"> override</span><span class="sym">;</span></span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt"></p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">function </span><a href="../uplotaxis/tplotaxis.getpixelspervalue.html">GetPixelsPerValue</a><span class="sym">;</span><span class="kw"> override</span><span class="sym">;</span></span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt"></p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">function </span><a href="../uplotaxis/tplotaxis.redraw.html">ReDraw</a><span class="sym">();</span><span class="kw"> override</span><span class="sym">;</span></span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt"></p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">procedure </span><a href="../uplotaxis/tplotaxis.drawinnerticks.html">DrawInnerTicks</a><span class="sym">;</span></span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt"></p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">function </span><a href="../uplotaxis/tplotaxis.drawlabel.html">DrawLabel</a><span class="sym">();</span></span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt"></p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">function </span><a href="../uplotaxis/tplotaxis.drawunits.html">DrawUnits</a><span class="sym">();</span></span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt"></p></td>
+</tr>
+<tr>
+<td><p><tt><span class="code"><span class="kw">public</span></span></tt></p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">constructor </span><a href="../uplotaxis/tplotaxis.create.html">Create</a><span class="sym">();</span><span class="kw"> override</span><span class="sym">;</span></span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt"></p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">destructor </span><a href="../uplotaxis/tplotaxis.destroy.html">Destroy</a><span class="sym">;</span><span class="kw"> override</span><span class="sym">;</span></span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt"></p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">function </span><a href="../uplotaxis/tplotaxis.checksize.html">CheckSize</a><span class="sym">();</span><span class="kw"> override</span><span class="sym">;</span></span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">check the drawing size</p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">function </span><a href="../uplotaxis/tplotaxis.recalcvalue.html">ReCalcValue</a><span class="sym">();</span></span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">Transform to log</p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">function </span><a href="../uplotaxis/tplotaxis.recalcvalueinverse.html">ReCalcValueInverse</a><span class="sym">();</span></span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">Retransform log to linear</p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">procedure </span><a href="../uplotaxis/tplotaxis.addinnergridaxis.html">AddInnerGridAxis</a><span class="sym">();</span></span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">neighbour axis for inner grid</p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">procedure </span><a href="../uplotaxis/tplotaxis.removeinnergridaxis.html">RemoveInnerGridAxis</a><span class="sym">();</span></span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt"></p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">procedure </span><a href="../uplotaxis/tplotaxis.set3dgridaxis.html">Set3DGridAxis</a><span class="sym">();</span></span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">Axis index for drawing 3D grids</p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">function </span><a href="../uplotaxis/tplotaxis.get3dgridaxis.html">Get3DGridAxis</a><span class="sym">;</span></span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">Axis index for drawing 3D grids</p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">procedure </span><a href="../uplotaxis/tplotaxis.remove3dgridaxis.html">Remove3DGridAxis</a><span class="sym">;</span></span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt"></p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">procedure </span><a href="../uplotaxis/tplotaxis.addcloneaxis.html">AddCloneAxis</a><span class="sym">();</span></span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">Draw a visible axis for indication only</p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">procedure </span><a href="../uplotaxis/tplotaxis.panpixel.html">PanPixel</a><span class="sym">();</span></span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">pan</p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">procedure </span><a href="../uplotaxis/tplotaxis.zoompixel.html">ZoomPixel</a><span class="sym">();</span></span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">zoom</p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">function </span><a href="../uplotaxis/tplotaxis.drawindicatoraxis.html">DrawIndicatorAxis</a><span class="sym">();</span></span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">drawing routine for axes</p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">function </span><a href="../uplotaxis/tplotaxis.drawcloneaxis.html">DrawCloneAxis</a><span class="sym">();</span></span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">drawing routine for cloneaxes</p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">property </span><a href="../uplotaxis/tplotaxis.originmode.html">OriginMode</a><span class="sym">: </span><a href="../uplotaxis/toriginmode.html">TOriginMode</a><span class="sym">;</span>  [rw]</span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">Originmode</p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">property </span><a href="../uplotaxis/tplotaxis.draworiginrel.html">DrawOriginRel</a><span class="sym">: </span>TPoint<span class="sym">;</span>  [rw]</span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">set the drawing origin relative to the plotrect clientrect</p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">property </span><a href="../uplotaxis/tplotaxis.draworigin.html">DrawOrigin</a><span class="sym">: </span>TPoint<span class="sym">;</span>  [r]</span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">get the draworigin in screen coordinates</p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">property </span><a href="../uplotaxis/tplotaxis.drawangle.html">DrawAngle</a><span class="sym">: </span>Extended<span class="sym">;</span>  [rw]</span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">axis angle in degrees</p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">property </span><a href="../uplotaxis/tplotaxis.automode.html">AutoMode</a><span class="sym">: </span><a href="../uplotaxis/tautolengthmode.html">TAutoLengthMode</a><span class="sym">;</span>  [rw]</span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">automatic mode for axis length</p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">property </span><a href="../uplotaxis/tplotaxis.drawlength.html">DrawLength</a><span class="sym">: </span>Extended<span class="sym">;</span>  [rw]</span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">drawing length</p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">property </span><a href="../uplotaxis/tplotaxis.autolength.html">AutoLength</a><span class="sym">: </span>Boolean<span class="sym">;</span>  [rw]</span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">automatic drawing length</p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">property </span><a href="../uplotaxis/tplotaxis.pixelspervalue.html">PixelsPerValue</a><span class="sym">: </span>Extended<span class="sym">;</span>  [r]</span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">pixels per axis value</p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">property </span><a href="../uplotaxis/tplotaxis.logscale.html">LogScale</a><span class="sym">: </span>Boolean<span class="sym">;</span>  [rw]</span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">LOG scaling of the axis</p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">property </span><a href="../uplotaxis/tplotaxis.logbase.html">LogBase</a><span class="sym">: </span>Extended<span class="sym">;</span>  [rw]</span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">LOG base</p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">property </span><a href="../uplotaxis/tplotaxis.ticks.html">Ticks</a><span class="sym">: </span>Boolean<span class="sym">;</span>  [rw]</span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">enable axis ticks</p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">property </span><a href="../uplotaxis/tplotaxis.subticks.html">SubTicks</a><span class="sym">: </span>Boolean<span class="sym">;</span>  [rw]</span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">enable axis ticks</p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">property </span><a href="../uplotaxis/tplotaxis.ticklength.html">TickLength</a><span class="sym">: </span>Integer<span class="sym">;</span>  [rw]</span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">lewngth of ticklines</p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">property </span><a href="../uplotaxis/tplotaxis.subticklength.html">SubTickLength</a><span class="sym">: </span>Integer<span class="sym">;</span>  [rw]</span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">length of subtick lines</p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">property </span><a href="../uplotaxis/tplotaxis.innerticks.html">InnerTicks</a><span class="sym">: </span>Boolean<span class="sym">;</span>  [rw]</span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">enable inner ticks</p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">property </span><a href="../uplotaxis/tplotaxis.innersubticks.html">InnerSubTicks</a><span class="sym">: </span>Boolean<span class="sym">;</span>  [rw]</span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">enable inner subticks</p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">property </span><a href="../uplotaxis/tplotaxis.inner3dticks.html">Inner3DTicks</a><span class="sym">: </span>Boolean<span class="sym">;</span>  [rw]</span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">enable 3D ticks</p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">property </span><a href="../uplotaxis/tplotaxis.marks.html">Marks</a><span class="sym">: </span>Boolean<span class="sym">;</span>  [rw]</span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">enable marks</p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">property </span><a href="../uplotaxis/tplotaxis.submarks.html">SubMarks</a><span class="sym">: </span>Boolean<span class="sym">;</span>  [rw]</span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">enable submarks</p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">property </span><a href="../uplotaxis/tplotaxis.tickangle.html">TickAngle</a><span class="sym">: </span><a href="../uplotaxis/ttickangle.html">TTickAngle</a><span class="sym">;</span>  [rw]</span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">drawing angle of axis ticks</p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">property </span><a href="../uplotaxis/tplotaxis.subtickgrain.html">SubTickGrain</a><span class="sym">: </span>Integer<span class="sym">;</span>  [rw]</span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">number of subticks in one main tick</p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">property </span><a href="../uplotaxis/tplotaxis.axislabel.html">AxisLabel</a><span class="sym">: </span>string<span class="sym">;</span>  [rw]</span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">Label of the axis</p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">property </span><a href="../uplotaxis/tplotaxis.valuecolor.html">ValueColor</a><span class="sym">: </span>TColor<span class="sym">;</span>  [r]</span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">map a value to a color</p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">property </span><a href="../uplotaxis/tplotaxis.valuefpcolor.html">ValueFPColor</a><span class="sym">: </span>TFPColor<span class="sym">;</span>  [r]</span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">map a value to a FPcolor</p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">property </span><a href="../uplotaxis/tplotaxis.tickstyle.html">TickStyle</a><span class="sym">: </span>TAxisStyle<span class="sym">;</span>  [rw]</span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">a TAxisStyle</p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">property </span><a href="../uplotaxis/tplotaxis.subtickstyle.html">SubTickStyle</a><span class="sym">: </span>TAxisStyle<span class="sym">;</span>  [rw]</span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">a TAxisStyle</p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">property </span><a href="../uplotaxis/tplotaxis.valueperpixel.html">ValuePerPixel</a><span class="sym">: </span>Extended<span class="sym">;</span>  [rw]</span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">values per pixel</p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">property </span><a href="../uplotaxis/tplotaxis.axismode.html">AxisMode</a><span class="sym">: </span><a href="../uplotaxis/taxismode.html">TAxisMode</a><span class="sym">;</span>  [rw]</span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">mode</p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">property </span><a href="../uplotaxis/tplotaxis.seriesunits.html">SeriesUnits</a><span class="sym">: </span>TStrings<span class="sym">;</span>  [r]</span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">Text for units</p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">property </span><a href="../uplotaxis/tplotaxis.visualparams.html">VisualParams</a><span class="sym">: </span><a href="../uplotaxis/taxisvisualparams.html">TAxisVisualParams</a><span class="sym">;</span>  [r]</span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">customize drawing</p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">property </span><a href="../uplotaxis/tplotaxis.rotatelabeltext.html">RotateLabelText</a><span class="sym">: </span>Boolean<span class="sym">;</span>  [rw]</span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt"></p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">property </span><a href="../uplotaxis/tplotaxis.rotateunittext.html">RotateUnitText</a><span class="sym">: </span>Boolean<span class="sym">;</span>  [rw]</span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt"></p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">property </span><a href="../uplotaxis/tplotaxis.numberformat.html">NumberFormat</a><span class="sym">: </span><a href="../uplotaxis/tnumberformat.html">TNumberFormat</a><span class="sym">;</span>  [rw]</span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">how to format the numbers</p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">property </span><a href="../uplotaxis/tplotaxis.autoplacedlength.html">AutoPlacedLength</a><span class="sym">: </span>Extended<span class="sym">;</span>  [rw]</span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt"></p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">property </span><a href="../uplotaxis/tplotaxis.autoplacedoriginrel.html">AutoPlacedOriginRel</a><span class="sym">: </span>TPoint<span class="sym">;</span>  [rw]</span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt"></p></td>
+</tr>
+<tr>
+<td><p><tt><span class="code"> <span class="kw">end</span><span class="sym">;</span></span></tt></p></td>
+</tr>
+</table>
+<h2>Inheritance</h2>
+<table cellpadding="0" cellspacing="0">
+<tr>
+<td align="center" valign="top"><p><tt><span class="code"><a href="../uplotaxis/tplotaxis.html">TPlotAxis</a></span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">Axes for the plot</p></td>
+</tr>
+<tr>
+<td align="center">|</td>
+</tr>
+<tr>
+<td align="center"><p><tt><span class="code">uPlotClass.TPlotAxisBase</span></tt></p></td>
+</tr>
+<tr>
+<td align="center">?</td>
+</tr>
+<tr>
+<td align="center"><p><tt><span class="code">TObject</span></tt></p></td>
+</tr>
+</table>
+</body>
+</html>

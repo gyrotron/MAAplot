@@ -1,0 +1,132 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<title>TPlotAxisBase</title>
+<link rel="stylesheet" href="../fpdoc.css" type="text/css">
+
+</head>
+<body>
+<table class="bar" width="100%" border="0" cellpadding="4" cellspacing="0">
+<tr>
+<td><b>[<a href="../uplotclass/index.html">Overview</a>][<a href="../uplotclass/index-2.html">Constants</a>][<a href="../uplotclass/index-3.html">Types</a>][<a href="../uplotclass/index-4.html">Classes</a>][<a href="../uplotclass/index-8.html">Index</a>]</b></td>
+<td align="right"><span class="bartitle">Reference for unit 'uPlotClass' (<a href="../index.html">#PlotClass</a>)</span></td>
+</tr>
+</table>
+<h1>TPlotAxisBase</h1>
+<p>[<a href="../uplotclass/tplotaxisbase-1.html" onClick="window.open('../uplotclass/tplotaxisbase-1.html', 'list', 'dependent=yes,resizable=yes,scrollbars=yes,height=400,width=300'); return false;">Properties</a> (<a href="../uplotclass/tplotaxisbase-2.html" onClick="window.open('../uplotclass/tplotaxisbase-2.html', 'list', 'dependent=yes,resizable=yes,scrollbars=yes,height=400,width=300'); return false;">by Name</a>)] [<a href="../uplotclass/tplotaxisbase-3.html" onClick="window.open('../uplotclass/tplotaxisbase-3.html', 'list', 'dependent=yes,resizable=yes,scrollbars=yes,height=400,width=300'); return false;">Methods</a> (<a href="../uplotclass/tplotaxisbase-4.html" onClick="window.open('../uplotclass/tplotaxisbase-4.html', 'list', 'dependent=yes,resizable=yes,scrollbars=yes,height=400,width=300'); return false;">by Name</a>)] [<a href="../uplotclass/tplotaxisbase-5.html" onClick="window.open('../uplotclass/tplotaxisbase-5.html', 'list', 'dependent=yes,resizable=yes,scrollbars=yes,height=400,width=300'); return false;">Events</a> (<a href="../uplotclass/tplotaxisbase-6.html" onClick="window.open('../uplotclass/tplotaxisbase-6.html', 'list', 'dependent=yes,resizable=yes,scrollbars=yes,height=400,width=300'); return false;">by Name</a>)] </p>
+<p>Base class for axes</p>
+<h2>Declaration</h2>
+<p>Source position: uplotclass.pas line 247</p>
+<table cellpadding="0" cellspacing="0">
+<tr>
+<td><p><tt><span class="code"><span class="kw">type</span> TPlotAxisBase <span class="sym">=</span> <span class="kw">class</span></span></tt></p></td>
+</tr>
+<tr>
+<td><p><tt><span class="code"><span class="kw">protected</span></span></tt></p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<a href="../uplotclass/tplotaxisbase.fnetaxisrect.html">FNetAxisRect</a><span class="sym">: </span>TRect<span class="sym">;</span></span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">Rect used by the axis lines axcluding labels and other text</p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">function </span><a href="../uplotclass/tplotaxisbase.getviewrange.html">GetViewRange</a><span class="sym">;</span><span class="kw"> virtual</span><span class="sym">;</span></span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt"></p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">procedure </span><a href="../uplotclass/tplotaxisbase.setviewrange.html">SetViewRange</a><span class="sym">();</span><span class="kw"> virtual</span><span class="sym">;</span></span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt"></p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">function </span><a href="../uplotclass/tplotaxisbase.getpixelspervalue.html">GetPixelsPerValue</a><span class="sym">;</span><span class="kw"> virtual</span><span class="sym">;</span></span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt"></p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">function </span><a href="../uplotclass/tplotaxisbase.redraw.html">Redraw</a><span class="sym">();</span><span class="kw"> virtual</span><span class="sym">;</span></span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt"></p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">function </span><a href="../uplotclass/tplotaxisbase.plotimage.html">PlotImage</a><span class="sym">;</span></span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt"></p></td>
+</tr>
+<tr>
+<td><p><tt><span class="code"><span class="kw">public</span></span></tt></p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">constructor </span><a href="../uplotclass/tplotaxisbase.create.html">Create</a><span class="sym">();</span><span class="kw"> virtual</span><span class="sym">;</span></span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt"></p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">destructor </span><a href="../uplotclass/tplotaxisbase.destroy.html">Destroy</a><span class="sym">;</span><span class="kw"> override</span><span class="sym">;</span></span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt"></p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">function </span><a href="../uplotclass/tplotaxisbase.checksize.html">CheckSize</a><span class="sym">();</span><span class="kw"> virtual</span><span class="sym">;</span></span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">Delivers size used for drawing</p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">property </span><a href="../uplotclass/tplotaxisbase.ownerplot.html">OwnerPlot</a><span class="sym">: </span><a href="../uplotclass/tplot.html">TPlot</a><span class="sym">;</span>  [rw]</span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">Ownerplot</p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">property </span><a href="../uplotclass/tplotaxisbase.ownerplotrect.html">OwnerPlotRect</a><span class="sym">: </span><a href="../uplotclass/tbaseplotrect.html">TBasePlotRect</a><span class="sym">;</span>  [rw]</span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">Containing plotrect</p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">property </span><a href="../uplotclass/tplotaxisbase.style.html">Style</a><span class="sym">: </span><a href="../uplotclass/tplotstylebase.html">TPlotStyleBase</a><span class="sym">;</span>  [rw]</span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">Plotstyle used for the axis</p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">property </span><a href="../uplotclass/tplotaxisbase.orientation.html">Orientation</a><span class="sym">: </span><a href="../uplotclass/taxisorientation.html">TAxisOrientation</a><span class="sym">;</span>  [rw]</span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">vertical or horizontal</p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">property </span><a href="../uplotclass/tplotaxisbase.viewrange.html">ViewRange</a><span class="sym">: </span><a href="../uplotclass/tvaluerange.html">TValueRange</a><span class="sym">;</span>  [rw]</span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">viewport of the data</p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">property </span><a href="../uplotclass/tplotaxisbase.pixelspervalue.html">PixelsPerValue</a><span class="sym">: </span>Extended<span class="sym">;</span>  [r]</span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">screen pixels per axis value</p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">property </span><a href="../uplotclass/tplotaxisbase.visible.html">Visible</a><span class="sym">: </span>Boolean<span class="sym">;</span>  [rw]</span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">visibility of axis</p></td>
+</tr>
+<tr>
+<td><p><tt><span class="code"> <span class="kw">end</span><span class="sym">;</span></span></tt></p></td>
+</tr>
+</table>
+<h2>Inheritance</h2>
+<table cellpadding="0" cellspacing="0">
+<tr>
+<td align="center" valign="top"><p><tt><span class="code"><a href="../uplotclass/tplotaxisbase.html">TPlotAxisBase</a></span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">Base class for axes</p></td>
+</tr>
+<tr>
+<td align="center">|</td>
+</tr>
+<tr>
+<td align="center"><p><tt><span class="code">TObject</span></tt></p></td>
+</tr>
+</table>
+<h2>Description</h2>
+<p>A axis is the representation of a data coordinate (i.e. X, Y or Z values). Axes have labels and units of measure. The axis is used for datapoint calculations (i.e. mapping of a specific value to the screen). Scaling is linear or logarithmic to a arbitrary log base.  Although cartesian axes usually are rectangular, drawing can be done with any arbitrary angle.  Important: all datapoint calculations are done based on the position of the "axis" TPlotAxis wether it is visible or not. Axes drawn for indication only are called CloneAxis and are defioned in the next class.  Do not use the base class - please use the TPlotAxis class. Check TPlotAxis for further functions and properties</p>
+</body>
+</html>

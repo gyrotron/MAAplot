@@ -1,0 +1,28 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<title>TPlotSeriesBase.FIsFastSeries</title>
+<link rel="stylesheet" href="../fpdoc.css" type="text/css">
+
+</head>
+<body>
+<table class="bar" width="100%" border="0" cellpadding="4" cellspacing="0">
+<tr>
+<td><b>[<a href="../uplotclass/index.html">Overview</a>][<a href="../uplotclass/index-2.html">Constants</a>][<a href="../uplotclass/index-3.html">Types</a>][<a href="../uplotclass/index-4.html">Classes</a>][<a href="../uplotclass/index-8.html">Index</a>]</b></td>
+<td align="right"><span class="bartitle">Reference for unit 'uPlotClass' (<a href="../index.html">#PlotClass</a>)</span></td>
+</tr>
+</table>
+<h1>TPlotSeriesBase.FIsFastSeries</h1>
+<p>standard or fast series</p>
+<h2>Declaration</h2>
+<p>Source position: uplotclass.pas line 303</p>
+<table cellpadding="0" cellspacing="0">
+<tr>
+<td><p><tt><span class="code"> <span class="kw">protected</span> <a href="../uplotclass/tplotseriesbase.html">TPlotSeriesBase</a><span class="sym">.</span>FIsFastSeries<span class="sym"> : </span>Boolean<span class="sym">;</span></span></tt></p></td>
+</tr>
+</table>
+<h2>Description</h2>
+<p>The historic mode of operaqtion is draweing points directly onto the canvas of the TImage (PlotImage). Series working that way are TPlotSeries, TXYPlotSeries and TXYZPlotSeries. For these, IsFastSeries is false.  The newer concept is drawing on a memory bitmap (TLazIntfImage) and overlay to the screen in TPLotRect.Redraw. This concept is significantly faster, therefore IsFastSeries = true for these series.  Note that Redrawing significantly differs between fast and standard series. Fast and standard series cannot be mixed in ode plotrect.</p>
+</body>
+</html>

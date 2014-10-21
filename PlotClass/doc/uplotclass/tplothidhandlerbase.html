@@ -1,0 +1,137 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<title>TPlotHIDHandlerBase</title>
+<link rel="stylesheet" href="../fpdoc.css" type="text/css">
+
+</head>
+<body>
+<table class="bar" width="100%" border="0" cellpadding="4" cellspacing="0">
+<tr>
+<td><b>[<a href="../uplotclass/index.html">Overview</a>][<a href="../uplotclass/index-2.html">Constants</a>][<a href="../uplotclass/index-3.html">Types</a>][<a href="../uplotclass/index-4.html">Classes</a>][<a href="../uplotclass/index-8.html">Index</a>]</b></td>
+<td align="right"><span class="bartitle">Reference for unit 'uPlotClass' (<a href="../index.html">#PlotClass</a>)</span></td>
+</tr>
+</table>
+<h1>TPlotHIDHandlerBase</h1>
+<p>[<a href="../uplotclass/tplothidhandlerbase-1.html" onClick="window.open('../uplotclass/tplothidhandlerbase-1.html', 'list', 'dependent=yes,resizable=yes,scrollbars=yes,height=400,width=300'); return false;">Properties</a> (<a href="../uplotclass/tplothidhandlerbase-2.html" onClick="window.open('../uplotclass/tplothidhandlerbase-2.html', 'list', 'dependent=yes,resizable=yes,scrollbars=yes,height=400,width=300'); return false;">by Name</a>)] [<a href="../uplotclass/tplothidhandlerbase-3.html" onClick="window.open('../uplotclass/tplothidhandlerbase-3.html', 'list', 'dependent=yes,resizable=yes,scrollbars=yes,height=400,width=300'); return false;">Methods</a> (<a href="../uplotclass/tplothidhandlerbase-4.html" onClick="window.open('../uplotclass/tplothidhandlerbase-4.html', 'list', 'dependent=yes,resizable=yes,scrollbars=yes,height=400,width=300'); return false;">by Name</a>)] [<a href="../uplotclass/tplothidhandlerbase-5.html" onClick="window.open('../uplotclass/tplothidhandlerbase-5.html', 'list', 'dependent=yes,resizable=yes,scrollbars=yes,height=400,width=300'); return false;">Events</a> (<a href="../uplotclass/tplothidhandlerbase-6.html" onClick="window.open('../uplotclass/tplothidhandlerbase-6.html', 'list', 'dependent=yes,resizable=yes,scrollbars=yes,height=400,width=300'); return false;">by Name</a>)] </p>
+<p>handling of keyboard/mouse input</p>
+<h2>Declaration</h2>
+<p>Source position: uplotclass.pas line 405</p>
+<table cellpadding="0" cellspacing="0">
+<tr>
+<td><p><tt><span class="code"><span class="kw">type</span> TPlotHIDHandlerBase <span class="sym">=</span> <span class="kw">class</span></span></tt></p></td>
+</tr>
+<tr>
+<td><p><tt><span class="code"><span class="kw">protected</span></span></tt></p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<a href="../uplotclass/tplothidhandlerbase.fzoominfo.html">FZoomInfo</a><span class="sym">: </span><a href="../uplotclass/tzoomrecord.html">TZoomRecord</a><span class="sym">;</span></span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt"></p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<a href="../uplotclass/tplothidhandlerbase.fownerplot.html">FOwnerPlot</a><span class="sym">: </span><a href="../uplotclass/tplot.html">TPlot</a><span class="sym">;</span></span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt"></p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<a href="../uplotclass/tplothidhandlerbase.fonmousewheelproc.html">FOnMouseWheelProc</a><span class="sym">: </span>TMouseWheelEvent<span class="sym">;</span></span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt"></p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<a href="../uplotclass/tplothidhandlerbase.fonmouseupproc.html">FOnMouseUpProc</a><span class="sym">: </span>TMouseEvent<span class="sym">;</span></span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt"></p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<a href="../uplotclass/tplothidhandlerbase.fonmousedownproc.html">FOnMouseDownProc</a><span class="sym">: </span>TMouseEvent<span class="sym">;</span></span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt"></p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<a href="../uplotclass/tplothidhandlerbase.fonmousemoveproc.html">FOnMouseMoveProc</a><span class="sym">: </span>TMouseMoveEvent<span class="sym">;</span></span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt"></p></td>
+</tr>
+<tr>
+<td><p><tt><span class="code"><span class="kw">public</span></span></tt></p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">constructor </span><a href="../uplotclass/tplothidhandlerbase.create.html">Create</a><span class="sym">();</span><span class="kw"> virtual</span><span class="sym">;</span></span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt"></p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">destructor </span><a href="../uplotclass/tplothidhandlerbase.destroy.html">Destroy</a><span class="sym">;</span><span class="kw"> override</span><span class="sym">;</span></span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt"></p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">procedure </span><a href="../uplotclass/tplothidhandlerbase.gethidactionstatesavail.html">GetHIDActionStatesAvail</a><span class="sym">();</span><span class="kw"> virtual</span><span class="sym">;</span><span class="kw"> abstract</span><span class="sym">;</span></span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt"></p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">function </span><a href="../uplotclass/tplothidhandlerbase.sethidaction.html">SetHIDAction</a><span class="sym">();</span><span class="kw"> virtual</span><span class="sym">;</span><span class="kw"> abstract</span><span class="sym">;</span></span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt"></p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">procedure </span><a href="../uplotclass/tplothidhandlerbase.gethidactionstate.html">GetHIDActionState</a><span class="sym">();</span><span class="kw"> virtual</span><span class="sym">;</span><span class="kw"> abstract</span><span class="sym">;</span></span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt"></p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">property </span><a href="../uplotclass/tplothidhandlerbase.ownerplot.html">OwnerPlot</a><span class="sym">: </span><a href="../uplotclass/tplot.html">TPlot</a><span class="sym">;</span>  [r]</span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt"></p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">property </span><a href="../uplotclass/tplothidhandlerbase.onmousedown.html">OnMouseDown</a><span class="sym">: </span>TMouseEvent<span class="sym">;</span>  [r]</span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt"></p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">property </span><a href="../uplotclass/tplothidhandlerbase.onmouseup.html">OnMouseUp</a><span class="sym">: </span>TMouseEvent<span class="sym">;</span>  [r]</span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt"></p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">property </span><a href="../uplotclass/tplothidhandlerbase.onmousemove.html">OnMouseMove</a><span class="sym">: </span>TMouseMoveEvent<span class="sym">;</span>  [r]</span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt"></p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">property </span><a href="../uplotclass/tplothidhandlerbase.onmousewheel.html">OnMouseWheel</a><span class="sym">: </span>TMouseWheelEvent<span class="sym">;</span>  [r]</span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt"></p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">property </span><a href="../uplotclass/tplothidhandlerbase.zoominfo.html">ZoomInfo</a><span class="sym">: </span><a href="../uplotclass/tzoomrecord.html">TZoomRecord</a><span class="sym">;</span>  [r]</span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt"></p></td>
+</tr>
+<tr>
+<td><p><tt><span class="code"> <span class="kw">end</span><span class="sym">;</span></span></tt></p></td>
+</tr>
+</table>
+<h2>Inheritance</h2>
+<table cellpadding="0" cellspacing="0">
+<tr>
+<td align="center" valign="top"><p><tt><span class="code"><a href="../uplotclass/tplothidhandlerbase.html">TPlotHIDHandlerBase</a></span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">handling of keyboard/mouse input</p></td>
+</tr>
+<tr>
+<td align="center">|</td>
+</tr>
+<tr>
+<td align="center"><p><tt><span class="code">TObject</span></tt></p></td>
+</tr>
+</table>
+<h2>Description</h2>
+<p>maps some input (i.e. shift +left mouse button or mouse wheel) to a plot related function like zoom, pan..</p>
+</body>
+</html>

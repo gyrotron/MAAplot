@@ -1,0 +1,198 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<title>TPlotRect</title>
+<link rel="stylesheet" href="../fpdoc.css" type="text/css">
+
+</head>
+<body>
+<table class="bar" width="100%" border="0" cellpadding="4" cellspacing="0">
+<tr>
+<td><b>[<a href="../uplotrect/index.html">Overview</a>][<a href="../uplotrect/index-2.html">Constants</a>][<a href="../uplotrect/index-3.html">Types</a>][<a href="../uplotrect/index-4.html">Classes</a>][<a href="../uplotrect/index-8.html">Index</a>]</b></td>
+<td align="right"><span class="bartitle">Reference for unit 'uPlotRect' (<a href="../index.html">#PlotClass</a>)</span></td>
+</tr>
+</table>
+<h1>TPlotRect</h1>
+<p>[<a href="../uplotrect/tplotrect-1.html" onClick="window.open('../uplotrect/tplotrect-1.html', 'list', 'dependent=yes,resizable=yes,scrollbars=yes,height=400,width=300'); return false;">Properties</a> (<a href="../uplotrect/tplotrect-2.html" onClick="window.open('../uplotrect/tplotrect-2.html', 'list', 'dependent=yes,resizable=yes,scrollbars=yes,height=400,width=300'); return false;">by Name</a>)] [<a href="../uplotrect/tplotrect-3.html" onClick="window.open('../uplotrect/tplotrect-3.html', 'list', 'dependent=yes,resizable=yes,scrollbars=yes,height=400,width=300'); return false;">Methods</a> (<a href="../uplotrect/tplotrect-4.html" onClick="window.open('../uplotrect/tplotrect-4.html', 'list', 'dependent=yes,resizable=yes,scrollbars=yes,height=400,width=300'); return false;">by Name</a>)] [<a href="../uplotrect/tplotrect-5.html" onClick="window.open('../uplotrect/tplotrect-5.html', 'list', 'dependent=yes,resizable=yes,scrollbars=yes,height=400,width=300'); return false;">Events</a> (<a href="../uplotrect/tplotrect-6.html" onClick="window.open('../uplotrect/tplotrect-6.html', 'list', 'dependent=yes,resizable=yes,scrollbars=yes,height=400,width=300'); return false;">by Name</a>)] </p>
+<p>Plotrect - container for  axes and series</p>
+<h2>Declaration</h2>
+<p>Source position: uplotrect.pas line 42</p>
+<table cellpadding="0" cellspacing="0">
+<tr>
+<td><p><tt><span class="code"><span class="kw">type</span> TPlotRect <span class="sym">=</span> <span class="kw">class</span><span class="sym">(</span><a href="../uplotclass/tbaseplotrect.html">uPlotClass.TBasePlotRect</a><span class="sym">)</span></span></tt></p></td>
+</tr>
+<tr>
+<td><p><tt><span class="code"><span class="kw">protected</span></span></tt></p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">function </span><a href="../uplotrect/tplotrect.getclientrect.html">GetClientRect</a><span class="sym">;</span><span class="kw"> override</span><span class="sym">;</span></span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt"></p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">function </span><a href="../uplotrect/tplotrect.getframerect.html">GetFrameRect</a><span class="sym">;</span><span class="kw"> override</span><span class="sym">;</span></span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt"></p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">function </span><a href="../uplotrect/tplotrect.getdatarect.html">GetDataRect</a><span class="sym">;</span></span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt"></p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">procedure </span><a href="../uplotrect/tplotrect.redraw.html">Redraw</a><span class="sym">;</span><span class="kw"> override</span><span class="sym">;</span></span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt"></p></td>
+</tr>
+<tr>
+<td><p><tt><span class="code"><span class="kw">public</span></span></tt></p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">constructor </span><a href="../uplotrect/tplotrect.create.html">Create</a><span class="sym">();</span><span class="kw"> override</span><span class="sym">;</span></span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt"></p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">destructor </span><a href="../uplotrect/tplotrect.destroy.html">Destroy</a><span class="sym">;</span><span class="kw"> override</span><span class="sym">;</span></span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt"></p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">procedure </span><a href="../uplotrect/tplotrect.storebackground.html">StoreBackGround</a><span class="sym">;</span></span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">stores the backround before redraw</p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">procedure </span><a href="../uplotrect/tplotrect.updateseriesdata.html">UpdateSeriesData</a><span class="sym">();</span></span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">updates the drawing of a series</p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">procedure </span><a href="../uplotrect/tplotrect.updatemarkers.html">UpdateMarkers</a><span class="sym">;</span></span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">currently unused</p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">procedure </span><a href="../uplotrect/tplotrect.updatezoomrect.html">UpdateZoomRect</a><span class="sym">;</span></span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">draw a rectangle</p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">procedure </span><a href="../uplotrect/tplotrect.pan.html">Pan</a><span class="sym">();</span></span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">pan the plotrect</p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">procedure </span><a href="../uplotrect/tplotrect.zoom.html">Zoom</a><span class="sym">();</span></span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">zoom the plotrect</p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">property </span><a href="../uplotrect/tplotrect.dataimage.html">DataImage</a><span class="sym">: </span>TLazIntfImage_debug<span class="sym">;</span>  [r]</span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">Memory image for fast plotting</p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">property </span><a href="../uplotrect/tplotrect.borderabs.html">BorderAbs</a><span class="sym">: </span><a href="../uplotrect/tborder.html">TBorder</a><span class="sym">;</span>  [rw]</span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">border within the containing TPLot</p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">property </span><a href="../uplotrect/tplotrect.borderrel.html">BorderRel</a><span class="sym">: </span><a href="../uplotrect/tborder.html">TBorder</a><span class="sym">;</span>  [rw]</span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">border within the containing TPLot</p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">property </span><a href="../uplotrect/tplotrect.showframe.html">ShowFrame</a><span class="sym">: </span>Boolean<span class="sym">;</span>  [rw]</span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">show a frame</p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">property </span><a href="../uplotrect/tplotrect.showtitle.html">ShowTitle</a><span class="sym">: </span>Boolean<span class="sym">;</span>  [rw]</span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">show a title</p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">property </span><a href="../uplotrect/tplotrect.title.html">Title</a><span class="sym">: </span>string<span class="sym">;</span>  [rw]</span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">title</p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">property </span><a href="../uplotrect/tplotrect.titletag.html">TitleTag</a><span class="sym">: </span>string<span class="sym">;</span>  [rw]</span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">additional text for title</p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">property </span><a href="../uplotrect/tplotrect.style.html">Style</a><span class="sym">: </span>TPlotStyle<span class="sym">;</span>  [rw]</span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">drawing style</p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">property </span><a href="../uplotrect/tplotrect.legendrect.html">LegendRect</a><span class="sym">: </span><a href="../uplotrect/tlegendrect.html">TLegendRect</a><span class="sym">;</span>  [rw]</span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">The legend</p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">property </span><a href="../uplotrect/tplotrect.colorscalerect.html">ColorScaleRect</a><span class="sym">: </span><a href="../uplotrect/tcolorscalerect.html">TColorScaleRect</a><span class="sym">;</span>  [rw]</span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">The colorscale</p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">property </span><a href="../uplotrect/tplotrect.showlegend.html">ShowLegend</a><span class="sym">: </span>Boolean<span class="sym">;</span>  [rw]</span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">Show the legend</p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">property </span><a href="../uplotrect/tplotrect.showcolorscale.html">ShowColorScale</a><span class="sym">: </span>Boolean<span class="sym">;</span>  [rw]</span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">Show the colorscale</p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">property </span><a href="../uplotrect/tplotrect.legendplacement.html">LegendPlacement</a><span class="sym">: </span><a href="../uplotrect/trectplacement.html">TRectPlacement</a><span class="sym">;</span>  [rw]</span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">Placement of the legend</p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">property </span><a href="../uplotrect/tplotrect.colorscaleplacement.html">ColorScalePlacement</a><span class="sym">: </span><a href="../uplotrect/trectplacement.html">TRectPlacement</a><span class="sym">;</span>  [rw]</span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">Placement of the colorscale</p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">property </span><a href="../uplotrect/tplotrect.axisautoplacefill.html">AxisAutoPlaceFill</a><span class="sym">: </span>Boolean<span class="sym">;</span>  [rw]</span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">plotrect does axis placement</p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">property </span><a href="../uplotrect/tplotrect.axisautoplacefillconstraints.html">AxisAutoPlaceFillConstraints</a><span class="sym">: </span>Double<span class="sym">;</span>  [rw]</span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">parameters for automatic placement</p></td>
+</tr>
+<tr>
+<td><p><tt><span class="code"> <span class="kw">end</span><span class="sym">;</span></span></tt></p></td>
+</tr>
+</table>
+<h2>Inheritance</h2>
+<table cellpadding="0" cellspacing="0">
+<tr>
+<td align="center" valign="top"><p><tt><span class="code"><a href="../uplotrect/tplotrect.html">TPlotRect</a></span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">Plotrect - container for  axes and series</p></td>
+</tr>
+<tr>
+<td align="center">|</td>
+</tr>
+<tr>
+<td align="center"><p><tt><span class="code">uPlotClass.TBasePlotRect</span></tt></p></td>
+</tr>
+<tr>
+<td align="center">?</td>
+</tr>
+<tr>
+<td align="center"><p><tt><span class="code">TObject</span></tt></p></td>
+</tr>
+</table>
+<h2>Description</h2>
+<p>The Plotrect is the main element containing exactly one dataplot. It determines the remaining size for axes after drawing a logend and a coloscale.  The Plotrect contains also a TLazIntfImage (DataImage) where the fast series plot onto and overlays the dataimage onto the screen duriong redraw. </p>
+</body>
+</html>

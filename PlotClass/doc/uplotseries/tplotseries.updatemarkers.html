@@ -1,0 +1,34 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<title>TPlotSeries.UpdateMarkers</title>
+<link rel="stylesheet" href="../fpdoc.css" type="text/css">
+
+</head>
+<body>
+<table class="bar" width="100%" border="0" cellpadding="4" cellspacing="0">
+<tr>
+<td><b>[<a href="../uplotseries/index.html">Overview</a>][<a href="../uplotseries/index-2.html">Constants</a>][<a href="../uplotseries/index-3.html">Types</a>][<a href="../uplotseries/index-4.html">Classes</a>][<a href="../uplotseries/index-8.html">Index</a>]</b></td>
+<td align="right"><span class="bartitle">Reference for unit 'uPlotSeries' (<a href="../index.html">#PlotClass</a>)</span></td>
+</tr>
+</table>
+<h1>TPlotSeries.UpdateMarkers</h1>
+<p>update the markers</p>
+<h2>Declaration</h2>
+<p>Source position: uPlotSeries.pas line 79</p>
+<table cellpadding="0" cellspacing="0">
+<tr>
+<td><p><tt><span class="code"> <span class="kw">public</span> <span class="kw">procedure</span> <a href="../uplotseries/tplotseries.html">TPlotSeries</a><span class="sym">.</span>UpdateMarkers<span class="sym">(</span></span></tt></p></td>
+</tr>
+<tr>
+<td><p><tt><span class="code">&nbsp;&nbsp;AContainerIndex<span class="sym">: </span>Integer</span></tt></p></td>
+</tr>
+<tr>
+<td><p><tt><span class="code"><span class="sym">)</span><span class="sym">;</span><span class="kw"> override</span><span class="sym">;</span></span></tt></p></td>
+</tr>
+</table>
+<h2>Description</h2>
+<p>When Data has changed (i.e. when CheckRefresh = true) also the markers need to be updated (PeakLists etc.).  Markerupdate is also neccessary when markers are added, removed or their properties are changed. Failure to call UpdateMarkers will result in erroneous marker drawing as these are based on older data.</p>
+</body>
+</html>

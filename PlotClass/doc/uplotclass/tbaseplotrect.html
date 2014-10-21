@@ -1,0 +1,167 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<title>TBasePlotRect</title>
+<link rel="stylesheet" href="../fpdoc.css" type="text/css">
+
+</head>
+<body>
+<table class="bar" width="100%" border="0" cellpadding="4" cellspacing="0">
+<tr>
+<td><b>[<a href="../uplotclass/index.html">Overview</a>][<a href="../uplotclass/index-2.html">Constants</a>][<a href="../uplotclass/index-3.html">Types</a>][<a href="../uplotclass/index-4.html">Classes</a>][<a href="../uplotclass/index-8.html">Index</a>]</b></td>
+<td align="right"><span class="bartitle">Reference for unit 'uPlotClass' (<a href="../index.html">#PlotClass</a>)</span></td>
+</tr>
+</table>
+<h1>TBasePlotRect</h1>
+<p>[<a href="../uplotclass/tbaseplotrect-1.html" onClick="window.open('../uplotclass/tbaseplotrect-1.html', 'list', 'dependent=yes,resizable=yes,scrollbars=yes,height=400,width=300'); return false;">Properties</a> (<a href="../uplotclass/tbaseplotrect-2.html" onClick="window.open('../uplotclass/tbaseplotrect-2.html', 'list', 'dependent=yes,resizable=yes,scrollbars=yes,height=400,width=300'); return false;">by Name</a>)] [<a href="../uplotclass/tbaseplotrect-3.html" onClick="window.open('../uplotclass/tbaseplotrect-3.html', 'list', 'dependent=yes,resizable=yes,scrollbars=yes,height=400,width=300'); return false;">Methods</a> (<a href="../uplotclass/tbaseplotrect-4.html" onClick="window.open('../uplotclass/tbaseplotrect-4.html', 'list', 'dependent=yes,resizable=yes,scrollbars=yes,height=400,width=300'); return false;">by Name</a>)] [<a href="../uplotclass/tbaseplotrect-5.html" onClick="window.open('../uplotclass/tbaseplotrect-5.html', 'list', 'dependent=yes,resizable=yes,scrollbars=yes,height=400,width=300'); return false;">Events</a> (<a href="../uplotclass/tbaseplotrect-6.html" onClick="window.open('../uplotclass/tbaseplotrect-6.html', 'list', 'dependent=yes,resizable=yes,scrollbars=yes,height=400,width=300'); return false;">by Name</a>)] </p>
+<p>Base class for plotrects</p>
+<h2>Declaration</h2>
+<p>Source position: uplotclass.pas line 183</p>
+<table cellpadding="0" cellspacing="0">
+<tr>
+<td><p><tt><span class="code"><span class="kw">type</span> TBasePlotRect <span class="sym">=</span> <span class="kw">class</span></span></tt></p></td>
+</tr>
+<tr>
+<td><p><tt><span class="code"><span class="kw">protected</span></span></tt></p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<a href="../uplotclass/tbaseplotrect.fframerect.html">FFrameRect</a><span class="sym">: </span>TRect<span class="sym">;</span></span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">Bounds of the plotrect within a TPlot</p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<a href="../uplotclass/tbaseplotrect.fclientrect.html">FClientRect</a><span class="sym">: </span>TRect<span class="sym">;</span></span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">Bounds of a logical rect used for calculations</p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<a href="../uplotclass/tbaseplotrect.fdatarect.html">FDataRect</a><span class="sym">: </span>TRect<span class="sym">;</span></span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">Bounds of a logical rect used for LazIntfImage drawing</p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">function </span><a href="../uplotclass/tbaseplotrect.getclientrect.html">GetClientRect</a><span class="sym">;</span><span class="kw"> virtual</span><span class="sym">;</span></span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">Bounds of a logical rect used for calculations</p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">function </span><a href="../uplotclass/tbaseplotrect.getframerect.html">GetFrameRect</a><span class="sym">;</span><span class="kw"> virtual</span><span class="sym">;</span></span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt"></p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">procedure </span><a href="../uplotclass/tbaseplotrect.redraw.html">Redraw</a><span class="sym">;</span><span class="kw"> virtual</span><span class="sym">;</span></span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">Called when redarwing is needed</p></td>
+</tr>
+<tr>
+<td><p><tt><span class="code"><span class="kw">public</span></span></tt></p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">constructor </span><a href="../uplotclass/tbaseplotrect.create.html">Create</a><span class="sym">();</span><span class="kw"> virtual</span><span class="sym">;</span></span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt"></p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">destructor </span><a href="../uplotclass/tbaseplotrect.destroy.html">Destroy</a><span class="sym">;</span><span class="kw"> override</span><span class="sym">;</span></span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt"></p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">function </span><a href="../uplotclass/tbaseplotrect.plotimage.html">PlotImage</a><span class="sym">;</span></span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">TImage component of the owner TPLot</p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">property </span><a href="../uplotclass/tbaseplotrect.clientrect.html">ClientRect</a><span class="sym">: </span>TRect<span class="sym">;</span>  [rw]</span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">Bounds of a logical rect used for calculations</p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">property </span><a href="../uplotclass/tbaseplotrect.framerect.html">FrameRect</a><span class="sym">: </span>TRect<span class="sym">;</span>  [rw]</span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">Bounds of the plotrect within a TPlot</p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">property </span><a href="../uplotclass/tbaseplotrect.datarect.html">DataRect</a><span class="sym">: </span>TRect<span class="sym">;</span>  [rw]</span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">Bounds of a logical rect used for LazIntfImage drawing</p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">property </span><a href="../uplotclass/tbaseplotrect.autoclientrect.html">AutoClientRect</a><span class="sym">: </span>Boolean<span class="sym">;</span>  [rw]</span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">automatic size adjustment</p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">property </span><a href="../uplotclass/tbaseplotrect.autoframerect.html">AutoFrameRect</a><span class="sym">: </span>Boolean<span class="sym">;</span>  [rw]</span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">automatic size adjustment</p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">property </span><a href="../uplotclass/tbaseplotrect.width.html">Width</a><span class="sym">: </span>Integer<span class="sym">;</span>  [r]</span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt"></p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">property </span><a href="../uplotclass/tbaseplotrect.heigth.html">Heigth</a><span class="sym">: </span>Integer<span class="sym">;</span>  [r]</span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">Framerect height in pixels</p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">property </span><a href="../uplotclass/tbaseplotrect.topleft.html">TopLeft</a><span class="sym">: </span>TPoint<span class="sym">;</span>  [r]</span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">TopLeft point of Framerect</p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">property </span><a href="../uplotclass/tbaseplotrect.bottomleft.html">BottomLeft</a><span class="sym">: </span>TPoint<span class="sym">;</span>  [r]</span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">TopLeft point of Framerect</p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">property </span><a href="../uplotclass/tbaseplotrect.ownerplot.html">OwnerPlot</a><span class="sym">: </span><a href="../uplotclass/tplot.html">TPlot</a><span class="sym">;</span>  [rw]</span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">Ownerplot of the plotrect</p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">property </span><a href="../uplotclass/tbaseplotrect.visible.html">Visible</a><span class="sym">: </span>Boolean<span class="sym">;</span>  [rw]</span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">Visibility of the plotrect</p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">property </span><a href="../uplotclass/tbaseplotrect.seriescontainedidx.html">SeriesContainedIdx</a><span class="sym">: </span>TFPList<span class="sym">;</span>  [r]</span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">Indices of series contained within the plotrect</p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">property </span><a href="../uplotclass/tbaseplotrect.plotrectindex.html">PlotRectIndex</a><span class="sym">: </span>Integer<span class="sym">;</span>  [r]</span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">Index of the plotrect</p></td>
+</tr>
+<tr>
+<td valign="top"><p><tt><span class="code">&nbsp;&nbsp;<span class="kw">property </span><a href="../uplotclass/tbaseplotrect.zooming.html">Zooming</a><span class="sym">: </span>Boolean<span class="sym">;</span>  [rw]</span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">Zooming mode active</p></td>
+</tr>
+<tr>
+<td><p><tt><span class="code"> <span class="kw">end</span><span class="sym">;</span></span></tt></p></td>
+</tr>
+</table>
+<h2>Inheritance</h2>
+<table cellpadding="0" cellspacing="0">
+<tr>
+<td align="center" valign="top"><p><tt><span class="code"><a href="../uplotclass/tbaseplotrect.html">TBasePlotRect</a></span></tt></p></td>
+<td><p>&nbsp;&nbsp;</p></td>
+<td><p class="cmt">Base class for plotrects</p></td>
+</tr>
+<tr>
+<td align="center">|</td>
+</tr>
+<tr>
+<td align="center"><p><tt><span class="code">TObject</span></tt></p></td>
+</tr>
+</table>
+<h2>Description</h2>
+<p>A Plotrect is the container for axes and series belonging together.  Usually a plotrect will hold 2 axes and a 2D series or 3 axes and a 3D series. One or more Plotrect are placed into a TPlot. The Plotrect does some size calculations to fit the dataplot into the desired are. Therefore the Plotrect  can be reagrded as the container class  for the "plot" you get at the end with axes, captions and data plotted into.  Note: More than one plotrect can be placed into a TPlot container class. The most common situation however would be to have one plotrect in one TPlot container.  Do not use the base class - please use the TPlotRect class. Check TPlotRect for further functions and properties</p>
+</body>
+</html>

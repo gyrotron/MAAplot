@@ -1,0 +1,40 @@
+{
+*****************************************************************************
+*  This file is part of Multiple Acronym Math and Audio Plot - MAAPlot      *
+*                                                                           *
+*  See the file COPYING.                                                    *
+*  for details about the copyright.                                         *
+*                                                                           *
+*  This program is distributed in the hope that it will be useful,          *
+*  but WITHOUT ANY WARRANTY; without even the implied warranty of           *
+*  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.                     *
+*                                                                           *
+*  MAAplot for Lazarus/fpc                                                  *
+*  (C) 2014 Stefan Junghans                                                 *
+*****************************************************************************
+}            
+
+1. PlotClass
+The folder PlotClass contains 16 units.
+Place this folder somewhere and make it available to your 
+Lazarus/fpc project.
+Example: 
+- You have your project located in /home/me/myLazarusProject
+- Put the PlotClass in /home/me/myLazarusProject/PlotClass
+- Add /home/me/myLazarusProject/PlotClass to your compiler path in Lazarus project settings
+
+You are now ready to use the plot by including uPlotClass in your uses clause.
+You might need more than the base unit, so the complete story is to add:
+  uPlotClass, uPlotRect, uPlotAxis, uPlotSeries, uPlotStyles;
+  
+Follow the instructions in the unit uPlotClass, read the documentation or
+check the examples provided:
+- "MAAplot_example_basic" for a very basic example and first starting point
+- "MAAplot_example" for a more complete overview of what is possible with the plot
+
+No further installation is required.
+
+2. Examples
+Simply compile with Lazarus.
+Lazarus 1.02 to 1.2.6 should work.
+Works with win32, Linux with qt4 and gtk2

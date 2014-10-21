@@ -1,0 +1,28 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<title>TPlotRect.AxisAutoPlaceFillConstraints</title>
+<link rel="stylesheet" href="../fpdoc.css" type="text/css">
+
+</head>
+<body>
+<table class="bar" width="100%" border="0" cellpadding="4" cellspacing="0">
+<tr>
+<td><b>[<a href="../uplotrect/index.html">Overview</a>][<a href="../uplotrect/index-2.html">Constants</a>][<a href="../uplotrect/index-3.html">Types</a>][<a href="../uplotrect/index-4.html">Classes</a>][<a href="../uplotrect/index-8.html">Index</a>]</b></td>
+<td align="right"><span class="bartitle">Reference for unit 'uPlotRect' (<a href="../index.html">#PlotClass</a>)</span></td>
+</tr>
+</table>
+<h1>TPlotRect.AxisAutoPlaceFillConstraints</h1>
+<p>parameters for automatic placement</p>
+<h2>Declaration</h2>
+<p>Source position: uplotrect.pas line 129</p>
+<table cellpadding="0" cellspacing="0">
+<tr>
+<td><p><tt><span class="code"> <span class="kw">public</span> <span class="kw">property </span><a href="../uplotrect/tplotrect.html">TPlotRect</a><span class="sym">.</span>AxisAutoPlaceFillConstraints<span class="sym"> : </span>Double<br>&nbsp;&nbsp;<span class="kw">read </span>GetAxisAutoPlaceFillConstraints<br>&nbsp;&nbsp;<span class="kw">write </span>SetAxisAutoPlaceFillConstraints<span class="sym">;</span></span></tt></p></td>
+</tr>
+</table>
+<h2>Description</h2>
+<p>If AxisAutoPlaceFill is set, this controls the relative length. AIndex is 0..2 (not the axis index in the plot).  One number out of three must be zero. This axis will be fitted according to the others. For example [1,0,2] will reault in the Z axis having twice the length of the X axis. The Y axis in this example will be fitted to the maximum remaining length.</p>
+</body>
+</html>
